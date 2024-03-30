@@ -38,6 +38,9 @@ nav .navbar-brand img{
     width: 200px;
 }
 
+nav .navbar-toggler-icon{
+  background: var(--primary-color);
+}
 nav.bg-gym ul li{
     margin-top: 14px;
 }
@@ -459,9 +462,10 @@ footer img{
 /* Responsie*/
 
 @media screen and (min-width:320px) and (max-width:990px){
-    header new button.navbar.toggler{
-        background: var(--primary-color);
+    .header .navbar-toggler.new {
+        color: var(--primary-color);
     }
+    
     nav.bg-gym ul li.login{
         margin-left: 0;
         margin-right: 0;
@@ -498,12 +502,13 @@ footer img{
 
 .slick-prev {
     right: 50px; 
-    background: url(../img/circulo-de-flecha.png) center/cover; /* Cambiar la ruta de la imagen según tu estructura de archivos */
+    background: url(../img/circulo-de-flecha.png) center/cover; 
 }
 
 .slick-next {
     right: 20px; 
-    background: url(../img/circulo-de-flecha.png) center/cover; /* Cambiar la ruta de la imagen según tu estructura de archivos */
+    background: url(../img/circulo-de-flecha.png) center/cover; 
+    transform: scaleX(-1); 
 }
 
 
